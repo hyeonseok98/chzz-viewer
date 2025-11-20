@@ -9,8 +9,13 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        chzzkBackground: "#050814",
+        chzzkPanel: "#0B1020",
+        chzzkBorder: "#1B2236",
+        chzzkAccent: "#00FFA3",
+        chzzkAccentSoft: "#00C97D",
+        chzzkTextPrimary: "#F9FAFB",
+        chzzkTextSecondary: "#9CA3AF",
       },
     },
   },
