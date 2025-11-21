@@ -1,5 +1,5 @@
-import ChzzMultiViewer from "@/components/chzz-viewer/chzz-multi-viewer";
+import ChzzkCupDraft from "./chzz-draft/(components)/chzzk-cup-draft";
 
-export default function Home() {
-  return <ChzzMultiViewer />;
+export default function HomePage() {
+  return <ChzzkCupDraft />;
 }
