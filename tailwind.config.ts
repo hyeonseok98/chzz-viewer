@@ -14,7 +14,7 @@ const config: Config = {
         chzzkBorder: "#1B2236",
         chzzkAccent: "#00FFA3",
         chzzkAccentSoft: "#00C97D",
-        chzzkTextPrimary: "#F9FAFB",
+        chzzkTextPrimary: "#ffffff",
         chzzkTextSecondary: "#9CA3AF",
       },
     },
