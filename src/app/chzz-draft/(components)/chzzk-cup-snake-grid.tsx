@@ -70,14 +70,14 @@ export default function ChzzkCupSnakeGrid({
             <br />
             2. 선수 리스트의 스트리머 프로필을 번호 칸에 드래그 앤 드롭하면
             자동으로 팀이 구성됩니다.
-            <br />
-            3. 팀내 동일 포지션의 선수를 팀으로 선정할 수 없습니다.
+            <br />❗ 현재 드래프트 내 프로필끼리 자리 변경하면 프로필이 움직이지
+            않는 버그가 있습니다. 빠르게 수정하도록 하겠습니다.
           </p>
         </div>
         <button
           type="button"
           onClick={onReset}
-          className="rounded-lg border border-chzzkAccent bg-chzzkAccent/10 px-3 py-1 text-[11px] font-semibold text-chzzkAccent"
+          className="rounded-lg border border-chzzkAccent bg-chzzkAccent/10 px-3 py-1 text-[11px] font-semibold text-chzzkAccent whitespace-nowrap"
         >
           초기화
         </button>
