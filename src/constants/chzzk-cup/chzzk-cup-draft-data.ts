@@ -3,8 +3,8 @@ import { ChzzkCupPlayer, ChzzkJungler, ChzzkTeam } from "@/types/chzzk-cup";
 // TOP
 import topKimbbong from "@/assets/chzzk-cup/player-profile/top/top-김뿡-default.webp";
 import topLooksam from "@/assets/chzzk-cup/player-profile/top/top-룩삼-default.webp";
-import whoistop from "@/assets/chzzk-cup/player-profile/top/top-물음표-default.png";
 import topYoondera from "@/assets/chzzk-cup/player-profile/top/top-운타라-default.webp";
+import topYoonganom from "@/assets/chzzk-cup/player-profile/top/top-윤가놈-default.webp";
 import topHandongsuk from "@/assets/chzzk-cup/player-profile/top/top-한동숙-default.webp";
 
 // JG
@@ -53,12 +53,17 @@ export const CHZZK_CUP_PLAYERS: ChzzkCupPlayer[] = [
     profileImage: topYoondera,
   },
   {
+    id: "Yoonganom",
+    nickname: "윤가놈",
+    line: "TOP",
+    profileImage: topYoonganom,
+  },
+  {
     id: "HANDONGSUK",
     nickname: "한동숙",
     line: "TOP",
     profileImage: topHandongsuk,
   },
-  { id: "whoistop", nickname: "공석", line: "TOP", profileImage: whoistop },
 
   { id: "LALO", nickname: "랄로", line: "MID", profileImage: midLalo },
   {
