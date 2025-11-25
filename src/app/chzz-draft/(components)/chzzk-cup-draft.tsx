@@ -280,7 +280,7 @@ export default function ChzzkCupDraft() {
       <div className="mx-auto flex max-w-[1600px] flex-col gap-4 px-6 pt-4 py-1">
         <header className="flex flex-col gap-1">
           <span className="text-xs font-semibold text-chzzkAccent">
-            CHZZK CUP
+            2025 CHZZK CUP
           </span>
           <h1 className="text-lg font-semibold">
             치지직컵 · 모의 스네이크 드래프트 팬사이트(Beta)
