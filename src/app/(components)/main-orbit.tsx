@@ -52,7 +52,7 @@ export function MainOrbit({ onCaptainHover }: MainOrbitProps) {
   }, []);
 
   return (
-    <div className="relative flex items-center justify-center w-[20rem] h-[20rem] mb-10 lg:w-[24rem] lg:h-[24rem]">
+    <div className="relative items-center justify-center w-[20rem] h-[20rem] mb-10 hidden md:flex lg:w-[24rem] lg:h-[24rem]">
       {/* 외부 링 */}
       <div className="absolute inset-0 rounded-full border border-white/10 bg-black/20 backdrop-blur-xl" />
 
@@ -115,8 +115,8 @@ export function MainOrbit({ onCaptainHover }: MainOrbitProps) {
               <br />
               CUP
             </span>
-            <span className="mt-1 w-8 h-px bg-green-300/70" />
-            <span className="text-[10px] text-zinc-300/80">
+            <span className="mt-1 w-8 h-px bg-green-300/70 hidden lg:flex" />
+            <span className="text-[10px] text-zinc-300/80 hidden lg:flex">
               첫 번째 스페셜 리그
             </span>
           </div>

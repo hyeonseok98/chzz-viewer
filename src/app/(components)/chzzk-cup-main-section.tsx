@@ -10,7 +10,7 @@ const TEAM_DRAFT_INFO = {
 };
 
 const CAPTAIN_PHRASE: Record<string, string> = {
-  갱맘: "이 설계하는",
+  갱맘: "이 주도적으로 설계하는",
   뱅: "마토와 함께하는",
   울프: "의 거석신앙과 함께하는",
   소우릎: "의 날카로움이 이끄는",
@@ -51,12 +51,12 @@ export default function ChzzkCupMainSection() {
             ) : (
               <>
                 <span className="block">새롭게 펼쳐지는</span>
-                <span className="mt-3 block">2025 치지직컵</span>
+                <span className="mt-3 block text-[48px]">2025 치지직컵</span>
               </>
             )}
           </h1>
 
-          <p className="max-w-xl text-sm text-chzzkTextSecondary sm:text-base">
+          <p className="max-w-xl mt-2 text-sm text-chzzkTextSecondary sm:text-base">
             스네이크 드래프트, 예상 못 한 팀 조합, 그리고 오프라인 무대까지
             <br />첫 번째 치지직컵에서만 볼 수 있는 이야기를 만나보세요.
           </p>
