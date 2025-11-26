@@ -39,7 +39,7 @@ export const CHZZK_CUP_TEAMS: ChzzkTeam[] = [
   { id: "GANGMOM", name: "갱맘 팀", captainNickname: "갱맘" },
   { id: "BANG", name: "뱅 팀", captainNickname: "뱅" },
   { id: "WOLF", name: "울프 팀", captainNickname: "울프" },
-  { id: "SOURF", name: "소우릎 팀", captainNickname: "인섹" },
+  { id: "SOURF", name: "소우릎 팀", captainNickname: "소우릎" },
   { id: "QUVEE", name: "큐베 팀", captainNickname: "큐베" },
 ];
 
