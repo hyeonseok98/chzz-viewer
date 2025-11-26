@@ -72,10 +72,12 @@ export default function ChzzkCupMainSection() {
           </Link>
 
           <Link
-            href="/chzzk-cup-schedule"
+            href="https://chzzk.naver.com/live/04b9076004dfe8cb119835eb28dcc747"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center gap-2 rounded-full border border-chzzkBorder px-8 py-3 text-sm font-semibold text-chzzkTextSecondary bg-chzzkPanel/80 backdrop-blur transition hover:border-chzzkAccent hover:text-chzzkTextPrimary"
           >
-            경기 일정
+            공식 방송 바로가기
           </Link>
         </div>
 
