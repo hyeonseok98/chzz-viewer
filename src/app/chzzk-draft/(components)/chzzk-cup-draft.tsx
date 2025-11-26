@@ -14,6 +14,7 @@ import {
 import { DragDropContext, DropResult } from "@hello-pangea/dnd";
 import { useMemo, useState } from "react";
 
+import Link from "next/link";
 import ChzzkCupJungleStrip from "./chzzk-cup-jungle-strip";
 import ChzzkCupLineBoard from "./chzzk-cup-line-board";
 import ChzzkCupSnakeGrid, {
@@ -277,15 +278,24 @@ export default function ChzzkCupDraft() {
 
   return (
     <main className="min-h-screen bg-chzzkBackground text-chzzkTextPrimary">
-      <div className="mx-auto flex max-w-[1600px] flex-col gap-4 px-6 pt-4 py-1">
-        <header className="flex flex-col gap-1">
-          <span className="text-xs font-semibold text-chzzkAccent">
-            CHZZK CUP
+      <div className="mx-auto flex max-w-[1600px] flex-col gap-4 px-6 pt-5">
+        <Link
+          href="/"
+          className="flex flex-col gap-1 lg:flex-row lg:items-center lg:justify-between"
+        >
+          <div>
+            <span className="text-xs font-semibold text-chzzkAccent">
+              2025 CHZZK CUP
+            </span>
+            <h1 className="text-lg font-semibold">
+              치지직컵 · 모의 스네이크 드래프트 팬사이트
+            </h1>
+          </div>
+
+          <span className="hidden mr-6 text-xs text-chzzkTextSecondary lg:flex">
+            ※ 본 사이트는 PC 환경에서 최적화되어 있습니다.
           </span>
-          <h1 className="text-lg font-semibold">
-            치지직컵 · 모의 스네이크 드래프트 팬사이트(Beta)
-          </h1>
-        </header>
+        </Link>
 
         <DragDropContext onDragEnd={handleDragEnd}>
           <section className="grid grid-cols-[360px_minmax(380px,0.9fr)_minmax(460px,1.05fr)] items-stretch gap-4 pb-6">
