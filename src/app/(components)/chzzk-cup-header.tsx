@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 const NAV_ITEMS = [
-  { label: "경기 일정", href: "/chzz-cup-schedule" },
+  { label: "경기 일정", href: "/chzzk-cup-schedule" },
   // { label: "팀 & 선수", href: "#teams" },
   { label: "모의 드래프트", href: "/chzzk-draft" },
   // { label: "클립 다시보기", href: "#clips" },
