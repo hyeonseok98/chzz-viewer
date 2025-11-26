@@ -64,16 +64,19 @@ export default function ChzzkCupMainSection() {
 
         <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
           <Link
-            href="/chzz-draft"
+            href="/chzzk-draft"
             className="group inline-flex items-center gap-2 rounded-full px-8 py-3 text-sm font-semibold text-chzzkBackground bg-chzzkAccent shadow-[0_0_40px_rgba(0,255,163,0.8)] transition hover:bg-chzzkAccentSoft"
           >
             모의 드래프트 하러 가기
             <span className="transition group-hover:translate-x-1">➜</span>
           </Link>
 
-          <button className="inline-flex items-center gap-2 rounded-full border border-chzzkBorder px-8 py-3 text-sm font-semibold text-chzzkTextSecondary bg-chzzkPanel/80 backdrop-blur transition hover:border-chzzkAccent hover:text-chzzkTextPrimary">
-            팀 &amp; 선수 라인업
-          </button>
+          <Link
+            href="/chzzk-cup-schedule"
+            className="inline-flex items-center gap-2 rounded-full border border-chzzkBorder px-8 py-3 text-sm font-semibold text-chzzkTextSecondary bg-chzzkPanel/80 backdrop-blur transition hover:border-chzzkAccent hover:text-chzzkTextPrimary"
+          >
+            경기 일정
+          </Link>
         </div>
 
         <div className="mt-6 flex flex-wrap items-center justify-center gap-3 text-xs text-chzzkTextSecondary">
@@ -82,7 +85,7 @@ export default function ChzzkCupMainSection() {
             {TEAM_DRAFT_INFO.label}&nbsp;:&nbsp;{TEAM_DRAFT_INFO.datetime}
           </span>
           <span className="w-px h-3 bg-chzzkBorder" />
-          <span>치지직컵 일정에 맞춰 순차 업데이트 예정</span>
+          <span>팀, 내전 결과 등 순차 업데이트 예정</span>
         </div>
       </div>
     </section>

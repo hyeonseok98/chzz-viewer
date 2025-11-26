@@ -4,10 +4,10 @@ import Image from "next/image";
 import Link from "next/link";
 
 const NAV_ITEMS = [
-  { label: "경기 일정", href: "#schedule" },
-  { label: "팀 & 선수", href: "#teams" },
-  { label: "모의 드래프트", href: "#draft" },
-  { label: "클립 다시보기", href: "#clips" },
+  { label: "경기 일정", href: "/chzz-cup-schedule" },
+  // { label: "팀 & 선수", href: "#teams" },
+  { label: "모의 드래프트", href: "/chzzk-draft" },
+  // { label: "클립 다시보기", href: "#clips" },
 ];
 
 export default function ChzzkCupHeader() {
@@ -20,7 +20,7 @@ export default function ChzzkCupHeader() {
             alt="치즈뷰어 로고"
             width={406}
             height={122}
-            className="w-[80px] h-[28px] md:w-[88px] md:h-[32px] lg:w-[108px] lg:h-[36px]"
+            className="w-[96px] h-[28px] md:w-[112px] md:h-[32px] lg:w-[124px] lg:h-[36px]"
             priority
           />
         </Link>
