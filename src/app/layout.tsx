@@ -14,7 +14,7 @@ const pretendard = localFont({
 export const metadata: Metadata = {
   title: "치즈뷰어",
   description: "치지직컵 대회 정보 및 모의 드래프트 팬사이트입니다.",
-  icons: { icon: "/icons/chzzviewer-logo.png" },
+  icons: { icon: "/icons/chzzviewer-logo-icon2.png" },
 };
 
 export default function RootLayout({
