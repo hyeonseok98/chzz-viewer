@@ -1,7 +1,7 @@
 import {
   PRIZE_POOL,
   PRIZE_TONE_BORDER_CLASS,
-} from "@/constants/chzzk-cup/chzzk-cup-schedule-data";
+} from "@/constants/chzzk-cup/chzzk-cup-info-data";
 import SectionTitle from "./section-title";
 
 export default function PrizeSummarySection() {

@@ -1,5 +1,6 @@
 "use client";
 
+import { ChzzkCupContainer } from "@/components/chzzk-cup-container";
 import Link from "next/link";
 import { useState } from "react";
 import { MainOrbit } from "./main-orbit";
@@ -26,7 +27,7 @@ export default function ChzzkCupMainSection() {
       : null;
 
   return (
-    <section className="relative flex flex-col items-center justify-center min-h-[calc(100vh-80px)] px-6 pb-8 pt-4 lg:px-0">
+    <ChzzkCupContainer className="relative flex flex-col items-center justify-center min-h-[calc(100vh-80px)] px-6 pb-8 pt-4 lg:px-0">
       {/* 배경 그라디언트 */}
       <div className="pointer-events-none absolute inset-0">
         <div className="absolute -left-40 top-[-10%] w-[40rem] h-[40rem] rounded-full bg-[radial-gradient(circle_at_center,_rgba(56,189,248,0.55),_transparent_65%)] opacity-60 blur-3xl" />
@@ -90,6 +91,6 @@ export default function ChzzkCupMainSection() {
           <span>팀, 내전 결과 등 순차 업데이트 예정</span>
         </div>
       </div>
-    </section>
+    </ChzzkCupContainer>
   );
 }
