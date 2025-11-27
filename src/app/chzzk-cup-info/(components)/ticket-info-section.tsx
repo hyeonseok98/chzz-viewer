@@ -1,7 +1,7 @@
 import {
   OFFLINE_BOOKING_URL,
   OFFLINE_TICKET_INFO,
-} from "@/constants/chzzk-cup/chzzk-cup-schedule-data";
+} from "@/constants/chzzk-cup/chzzk-cup-info-data";
 import SectionTitle from "./section-title";
 
 export default function TicketInfoSection() {
