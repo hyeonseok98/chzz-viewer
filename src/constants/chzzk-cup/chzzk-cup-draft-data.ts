@@ -3,7 +3,7 @@ import { ChzzkCupPlayer, ChzzkJungler, ChzzkTeam } from "@/types/chzzk-cup";
 // TOP
 import topKimbbong from "@/assets/chzzk-cup/player-profile/top/top-김뿡-default.webp";
 import topLooksam from "@/assets/chzzk-cup/player-profile/top/top-룩삼-default.webp";
-import topYoondera from "@/assets/chzzk-cup/player-profile/top/top-운타라-default.webp";
+import topYoontara from "@/assets/chzzk-cup/player-profile/top/top-운타라-default.webp";
 import topYoonganom from "@/assets/chzzk-cup/player-profile/top/top-윤가놈-default.webp";
 import topHandongsuk from "@/assets/chzzk-cup/player-profile/top/top-한동숙-default.webp";
 
@@ -17,7 +17,7 @@ import jgQuvee from "@/assets/chzzk-cup/player-profile/jg/jg-큐베-default.webp
 // MID
 import midLalo from "@/assets/chzzk-cup/player-profile/mid/mid-랄로-default.webp";
 import midAmbition from "@/assets/chzzk-cup/player-profile/mid/mid-앰비션-default.webp";
-import midInsek from "@/assets/chzzk-cup/player-profile/mid/mid-인섹-default.webp";
+import midInsec from "@/assets/chzzk-cup/player-profile/mid/mid-인섹-default.webp";
 import midTrollya from "@/assets/chzzk-cup/player-profile/mid/mid-트롤야-default.webp";
 import midPhoenixpark from "@/assets/chzzk-cup/player-profile/mid/mid-피닉스박-default.webp";
 
@@ -40,7 +40,7 @@ export const CHZZK_CUP_TEAMS: ChzzkTeam[] = [
   { id: "BANG", name: "뱅 팀", captainNickname: "뱅" },
   { id: "WOLF", name: "울프 팀", captainNickname: "울프" },
   { id: "SOURF", name: "소우릎 팀", captainNickname: "소우릎" },
-  { id: "QUVEE", name: "큐베 팀", captainNickname: "큐베" },
+  { id: "CUVEE", name: "큐베 팀", captainNickname: "큐베" },
 ];
 
 export const CHZZK_CUP_PLAYERS: ChzzkCupPlayer[] = [
@@ -50,7 +50,7 @@ export const CHZZK_CUP_PLAYERS: ChzzkCupPlayer[] = [
     id: "YOONDERA",
     nickname: "운타라",
     line: "TOP",
-    profileImage: topYoondera,
+    profileImage: topYoontara,
   },
   {
     id: "Yoonganom",
@@ -72,7 +72,7 @@ export const CHZZK_CUP_PLAYERS: ChzzkCupPlayer[] = [
     line: "MID",
     profileImage: midAmbition,
   },
-  { id: "INSEK", nickname: "인섹", line: "MID", profileImage: midInsek },
+  { id: "INSEK", nickname: "인섹", line: "MID", profileImage: midInsec },
   { id: "TROLLYA", nickname: "트롤야", line: "MID", profileImage: midTrollya },
   {
     id: "PHOENIXPARK",
@@ -150,9 +150,9 @@ export const CHZZK_CUP_JUNGLERS: ChzzkJungler[] = [
     profileImage: jgSourf,
   },
   {
-    id: "QUVEE_JG",
+    id: "CUVEE_JG",
     nickname: "큐베",
-    teamId: "QUVEE",
+    teamId: "CUVEE",
     profileImage: jgQuvee,
   },
 ];

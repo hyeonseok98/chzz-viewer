@@ -1,5 +1,6 @@
 "use client";
 
+import { ChzzkCupContainer } from "@/components/chzzk-cup-container";
 import Link from "next/link";
 import { useState } from "react";
 import { MainOrbit } from "./main-orbit";
@@ -26,7 +27,7 @@ export default function ChzzkCupMainSection() {
       : null;
 
   return (
-    <section className="relative flex flex-col items-center justify-center min-h-[calc(100vh-80px)] px-6 pb-8 pt-4 lg:px-0">
+    <ChzzkCupContainer className="relative flex flex-col items-center justify-center min-h-[calc(100vh-80px)] px-6 pb-8 pt-4 lg:px-0">
       {/* 배경 그라디언트 */}
       <div className="pointer-events-none absolute inset-0">
         <div className="absolute -left-40 top-[-10%] w-[40rem] h-[40rem] rounded-full bg-[radial-gradient(circle_at_center,_rgba(56,189,248,0.55),_transparent_65%)] opacity-60 blur-3xl" />
@@ -72,10 +73,12 @@ export default function ChzzkCupMainSection() {
           </Link>
 
           <Link
-            href="/chzzk-cup-schedule"
+            href="https://chzzk.naver.com/live/04b9076004dfe8cb119835eb28dcc747"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center gap-2 rounded-full border border-chzzkBorder px-8 py-3 text-sm font-semibold text-chzzkTextSecondary bg-chzzkPanel/80 backdrop-blur transition hover:border-chzzkAccent hover:text-chzzkTextPrimary"
           >
-            경기 일정
+            공식 방송 바로가기
           </Link>
         </div>
 
@@ -88,6 +91,6 @@ export default function ChzzkCupMainSection() {
           <span>팀, 내전 결과 등 순차 업데이트 예정</span>
         </div>
       </div>
-    </section>
+    </ChzzkCupContainer>
   );
 }
