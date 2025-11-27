@@ -26,7 +26,6 @@ const TEAM_SUB_LABEL: Record<TeamId, string> = {
 
 const getDefaultScreenshotCount = (seriesType: string) => {
   if (seriesType === "BO5") return 5;
-  if (seriesType === "BO4") return 4;
   if (seriesType === "BO3") return 3;
   return 1;
 };
