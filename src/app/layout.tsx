@@ -26,7 +26,10 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-      <body className={`${pretendard.variable} antialiased`}>
+      <body
+        className={`${pretendard.variable}  antialiased flex min-h-screen flex-col
+          bg-chzzkBackground text-chzzkTextPrimary`}
+      >
         <ReactQueryProvider>{children}</ReactQueryProvider>
 
         {/* -------- Google tag (gtag.js) ---------- */}

@@ -20,7 +20,7 @@ const MINI_CIRCLE_COLORS: Record<string, string> = {
   BANG: "#f97316",
   WOLF: "#22c55e",
   SOURF: "#e879f9",
-  QUVEE: "#facc15",
+  CUVEE: "#facc15",
 };
 
 export function MainOrbit({ onCaptainHover }: MainOrbitProps) {

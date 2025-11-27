@@ -1,7 +1,7 @@
-import { OFFICIAL_CHZZK_CUP_URL } from "@/constants/chzzk-cup/chzzk-cup-schedule-data";
+import { OFFICIAL_CHZZK_CUP_URL } from "@/constants/chzzk-cup/chzzk-cup-info-data";
 import Link from "next/link";
 
-export default function ScheduleIntro() {
+export default function ChzzkCupInfoIntro() {
   return (
     <div className="flex flex-col items-center gap-5 text-center">
       <p className="text-xs uppercase tracking-[0.4em] text-chzzkTextSecondary">

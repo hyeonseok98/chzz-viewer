@@ -1,42 +1,23 @@
+import { ChzzkCupContainer } from "@/components/chzzk-cup-container";
 import ChzzkCupFooter from "../(components)/chzzk-cup-footer";
 import ChzzkCupHeader from "../(components)/chzzk-cup-header";
-
-import {
-  PLAYOFF_MATCHES,
-  SCHEDULE_PHASES,
-  TOURNAMENT_RULES,
-} from "@/constants/chzzk-cup/chzzk-cup-schedule-data";
-
-import PrizeSummarySection from "./(components)/prise-summary-section";
-import RulesSection from "./(components)/rules-section";
 import SchedulePageInteractive from "./(components)/schedule-page-interactive";
-import ScheduleIntro from "./(components)/sehedule-intro";
-import TicketInfoSection from "./(components)/ticket-info-section";
 
-export default function SchedulePage() {
+export default function ChzzkCupSchedulePage() {
   return (
-    <div className="min-h-screen bg-chzzkBackground text-chzzkTextPrimary">
+    <div className="min-h-[100dvh] overflow-x-clip bg-[#060B14] flex flex-col">
       <ChzzkCupHeader />
 
-      <main className="relative">
-        <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute -left-40 top-[-10%] h-[40rem] w-[40rem] rounded-full bg-[radial-gradient(circle_at_center,_rgba(56,189,248,0.55),_transparent_65%)] opacity-60 blur-3xl" />
-          <div className="absolute -right-[10%] top-[20%] h-[32rem] w-[32rem] rounded-full bg-[radial-gradient(circle_at_center,_rgba(249,115,22,0.6),_transparent_65%)] opacity-70 blur-3xl" />
+      <main className="relative flex-1 overflow-x-clip">
+        <div className="pointer-events-none absolute inset-0 overflow-hidden">
+          <div className="absolute -top-44 -left-64 h-[720px] w-[720px] rounded-full bg-emerald-500/12 blur-3xl" />
+          <div className="absolute top-20 -left-24 h-[520px] w-[520px] rounded-full bg-sky-500/10 blur-3xl" />
+          <div className="absolute -top-28 right-[-220px] h-[620px] w-[620px] rounded-full bg-fuchsia-500/10 blur-3xl" />
         </div>
 
-        <section className="relative flex flex-col w-full max-w-6xl mx-auto px-6 py-12 gap-3 lg:px-6 lg:py-16 z-10">
-          <ScheduleIntro />
-
-          <SchedulePageInteractive
-            phases={SCHEDULE_PHASES}
-            playoffMatches={PLAYOFF_MATCHES}
-          />
-
-          <RulesSection rules={TOURNAMENT_RULES} />
-
-          <TicketInfoSection />
-          <PrizeSummarySection />
-        </section>
+        <ChzzkCupContainer className="relative py-10">
+          <SchedulePageInteractive />
+        </ChzzkCupContainer>
       </main>
 
       <ChzzkCupFooter />
