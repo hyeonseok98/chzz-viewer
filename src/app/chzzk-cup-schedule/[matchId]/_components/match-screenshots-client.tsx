@@ -1,5 +1,6 @@
 "use client";
 
+import ZoomableImage from "@/components/zoomable-image";
 import Image from "next/image";
 import { useState } from "react";
 
@@ -14,26 +15,14 @@ export default function MatchScreenshotsClient({
     <>
       <div className="grid gap-4 md:grid-cols-2">
         {screenshots.map((shot) => (
-          <button
+          <ZoomableImage
             key={shot.src}
-            type="button"
-            onClick={() => setOpen({ src: shot.src, index: shot.index })}
-            className="relative overflow-hidden rounded-3xl border border-white/10 bg-white/[0.03] text-left hover:border-white/15"
-          >
-            <div className="absolute left-3 top-3 z-10 rounded-full border border-white/10 bg-black/45 px-3 py-1 text-xs font-semibold text-white/80">
-              GAME {shot.index}
-            </div>
-
-            <div className="relative aspect-[16/9] w-full bg-black/40">
-              <Image
-                src={shot.src}
-                alt={shot.alt}
-                fill
-                sizes="(min-width: 768px) 50vw, 100vw"
-                className="object-contain"
-              />
-            </div>
-          </button>
+            src={shot.src}
+            alt={shot.alt}
+            label={`GAME ${shot.index}`}
+            emptyText="아직 경기 전입니다"
+            className="w-full"
+          />
         ))}
       </div>
 
